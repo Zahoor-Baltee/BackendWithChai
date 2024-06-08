@@ -22,5 +22,6 @@ router.route('/register').post(
 router.route('/login').post(loginUser)
 //Secure Route
 router.route('/logout').post(jwtVerify, logOutUser)
+router.route('/refresh-token').post(refreshAccessToken)
 
 export default router
